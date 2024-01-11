@@ -34,7 +34,7 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-                Intent intent1 = new Intent(homepage.this, minigame_correct.class);
+                Intent intent1 = new Intent(homepage.this, minigamepage.class);
                 startActivity(intent1);
             }
         });

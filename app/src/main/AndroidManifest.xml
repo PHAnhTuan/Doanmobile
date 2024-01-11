@@ -22,6 +22,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.register"/>
+        <activity android:name=".activity.homepage"/>
+        <activity android:name=".activity.minigamepage" />
+        <activity android:name=".activity.minigame_quiz" />
+        <activity android:name=".activity.minigame_correct" />
+        <activity android:name=".activity.player"/>
+        <activity android:name=".activity.player_name"/>
+        <activity android:name=".activity.correct_highscore"/>
+        <activity android:name=".activity.correct_result"/>
+        <activity android:name=".activity.correct_test"/>
+        <activity android:name=".activity.quiz_highscore"/>
+        <activity android:name=".activity.quiz_result"/>
+        <activity android:name=".activity.quiz_test"/>
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.doanmobile.R;
 
 public class minigame_correct extends AppCompatActivity {
-    Button BatDau, DiemCao, TroVe, HuongDan;
+    Button BatDau, DiemCao, TroVe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,6 +1,7 @@
 package com.example.doanmobile.activity;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -20,6 +21,8 @@ import com.example.doanmobile.data.Question;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
@@ -40,8 +43,8 @@ public class quiz_test extends AppCompatActivity {
     int pos = 0;
     int kq = 0;
     CountDownTimer Time;
-    public ArrayList<QuestionNare> list = new ArrayList();
-    public ArrayList<Question> PList = new ArrayList();
+    public ArrayList<QuestionNare> list = new ArrayList<>();
+    public ArrayList<Question> PList = new ArrayList<>();
 
     public void countdown() {
         Time = new CountDownTimer(21000, 1000) {
@@ -73,6 +76,8 @@ public class quiz_test extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_test);
+
+        PList = new ArrayList<>();
 
         CauHoi = (TextView) findViewById(R.id.qs);
         KetQua = (TextView) findViewById(R.id.Result);
@@ -160,7 +165,7 @@ public class quiz_test extends AppCompatActivity {
         B.setText(list.get(i).AnswerB);
         C.setText(list.get(i).AnswerC);
         D.setText(list.get(i).AnswerD);
-        KetQua.setText("Câu đúng: " + kq);
+        KetQua.setText("Right sentence: " + kq);
         RG.clearCheck();
         A.setVisibility(View.VISIBLE);
         B.setVisibility(View.VISIBLE);
@@ -170,17 +175,21 @@ public class quiz_test extends AppCompatActivity {
 
     public void AddQuestionFromFileTXT() {
         try {
+            AssetManager assetManager = getAssets();
+            InputStream inputStream = assetManager.open("Question.txt");
+            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+
             String splitBy = ",";
-            FileInputStream in = this.openFileInput("Question.txt");
-            BufferedReader br = new BufferedReader(new InputStreamReader(in));
-            while (br != null) {
-                String line = br.readLine();
+            String line;
+
+            while ((line = br.readLine()) != null) {
                 String[] value = line.split(splitBy);
                 PList.add(new Question(value[1], Integer.parseInt(value[0])));
             }
+
             br.close();
-        } catch (Exception e) {
-            System.out.println("" + e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -189,22 +198,29 @@ public class quiz_test extends AppCompatActivity {
         Bundle packageFromCaller = callerIntent.getBundleExtra("bundle");
         int number = packageFromCaller.getInt("number");
 
-        for (int i = 0; i <= number - 1; i++) {
+        for (int i = 0; i <= number -1; i++) {
             QuestionNare Q = new QuestionNare();
             Random generator = new Random();
-            Q.AnswerA = PList.get(generator.nextInt(50)).getName();
-            do {
-                Q.AnswerB = PList.get(generator.nextInt(50)).getName();
-            } while (Q.AnswerA == Q.AnswerB);
 
-            do {
-                Q.AnswerC = PList.get(generator.nextInt(50)).getName();
-            } while (Q.AnswerC == Q.AnswerB || Q.AnswerC == Q.AnswerA);
+            // Gán câu trả lời A ngẫu nhiên từ PList
+            Q.AnswerA = PList.get(generator.nextInt(PList.size())).getName();
 
+            // Gán câu trả lời B khác với câu trả lời A
             do {
-                Q.AnswerD = PList.get(generator.nextInt(50)).getName();
-            } while (Q.AnswerD == Q.AnswerC || Q.AnswerD == Q.AnswerB || Q.AnswerD == Q.AnswerA);
+                Q.AnswerB = PList.get(generator.nextInt(PList.size())).getName();
+            } while (Q.AnswerA.equals(Q.AnswerB));
 
+            // Gán câu trả lời C khác với câu trả lời A và B
+            do {
+                Q.AnswerC = PList.get(generator.nextInt(PList.size())).getName();
+            } while (Q.AnswerC.equals(Q.AnswerB) || Q.AnswerC.equals(Q.AnswerA));
+
+            // Gán câu trả lời D khác với câu trả lời A, B và C
+            do {
+                Q.AnswerD = PList.get(generator.nextInt(PList.size())).getName();
+            } while (Q.AnswerD.equals(Q.AnswerC) || Q.AnswerD.equals(Q.AnswerB) || Q.AnswerD.equals(Q.AnswerA));
+
+            // Chọn ngẫu nhiên câu trả lời đúng và gán giá trị Answer tương ứng
             int value = generator.nextInt(4);
             int find = 0;
 
@@ -226,6 +242,8 @@ public class quiz_test extends AppCompatActivity {
                     Q.Answer = "D";
                     break;
             }
+
+            // Gán ID cho câu hỏi và thêm vào danh sách
             Q.ID = "a" + PList.get(find).getId();
             list.add(Q);
         }

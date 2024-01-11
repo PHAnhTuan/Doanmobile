@@ -21,9 +21,9 @@ public class player extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player);
 
-        NhapTen = (EditText)findViewById(R.id.btnusername);
-        BatDau= (Button)findViewById(R.id.btnstart);
-        TroVe = (Button)findViewById(R.id.Back);
+        NhapTen = findViewById(R.id.btnusername);
+        BatDau= findViewById(R.id.btnstart);
+        TroVe = findViewById(R.id.Back);
         final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.buttonclick);
 
         BatDau.setOnClickListener(new View.OnClickListener() {

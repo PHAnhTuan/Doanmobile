@@ -156,13 +156,12 @@ public class correct_test extends Activity {
 
     Button KiemTra;
     EditText TraLoi;
-    int star = 0;
+
     int count = 0;
     int pos = 0;
     int kq = 0;
     int scd = 10;
     int qc = 0, qc1 = 0, qc2 = 0, qc3 = 0, qc4 = 0, qc5 = 0, qc6 = 0, qc7 = 0, qc8 = 0, qc9 = 0, qc10 = 0, qc11 = 0, qc12 = 0, qc13 = 0, qc14 = 0, qc15 = 0, qc16 = 0, qc17 = 0, qc18 = 0, qc19 = 0, qc20 = 0;
-    int gh = 3;
     int[] integers = new int[21];
     int[] integers1 = new int[20];
     CountDownTimer ThoiGianC;
@@ -262,13 +261,13 @@ public class correct_test extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.correct_test);
 
-        CauHoi = (TextView) findViewById(R.id.question);
-        Diem = (TextView) findViewById(R.id.CorrectAnswer);
-        ThoiGian = (TextView) findViewById(R.id.time);
-        Tilte = (TextView) findViewById(R.id.edtText);
-        TroVe = (ImageButton) findViewById(R.id.btnreturn);
-        KiemTra = (Button) findViewById(R.id.answer);
-        TraLoi = (EditText) findViewById(R.id.edtanswer);
+        CauHoi = findViewById(R.id.question);
+        Diem = findViewById(R.id.CorrectAnswer);
+        ThoiGian = findViewById(R.id.time);
+        Tilte = findViewById(R.id.edtText);
+        TroVe = findViewById(R.id.btnreturn);
+        KiemTra = findViewById(R.id.answer);
+        TraLoi = findViewById(R.id.edtanswer);
         final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.buttonclick);
         countdown();
         random();
@@ -315,14 +314,17 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         scd--;
                         if (scd < 1) {
                             scd = 1;
                         }
                         count = 0;
-                        gh--;
+
                     }
 
                     qc++;
@@ -352,10 +354,13 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
-                        gh--;
+
                         scd--;
                     }
 
@@ -388,13 +393,15 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
                         scd--;
                     }
-
 
                     qc++;
                     qc3++;
@@ -425,7 +432,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -461,7 +471,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -497,7 +510,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -533,7 +549,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -569,7 +588,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -605,7 +627,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -641,7 +666,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -677,7 +705,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -713,7 +744,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -749,7 +783,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -785,7 +822,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -821,7 +861,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -857,7 +900,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -893,7 +939,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -929,7 +978,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -965,7 +1017,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 
@@ -1001,7 +1056,10 @@ public class correct_test extends Activity {
                         count++;
 
                         scd++;
+                        if (count == 3) {
 
+                            count = 0;
+                        }
                     } else {
                         count = 0;
 

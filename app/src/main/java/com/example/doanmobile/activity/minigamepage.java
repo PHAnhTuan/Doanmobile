@@ -25,7 +25,7 @@ public class minigamepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-                Intent intent = new Intent(minigamepage.this, theory.class);
+                Intent intent = new Intent(minigamepage.this, minigame_quiz.class);
                 startActivity(intent);
             }
         });

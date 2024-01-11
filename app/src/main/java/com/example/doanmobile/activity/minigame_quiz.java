@@ -18,9 +18,9 @@ public class minigame_quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.minigame_quiz);
 
-        Start = (Button)findViewById(R.id.btnstart);
-        HighScore = (Button)findViewById(R.id.btnhighscore);
-        Back = (Button)findViewById(R.id.btnQuit);
+        Start = findViewById(R.id.btnstart);
+        HighScore = findViewById(R.id.btnhighscore);
+        Back = findViewById(R.id.btnQuit);
         final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.buttonclick);
 
         Start.setOnClickListener(new View.OnClickListener() {
