@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#569FDA">
+
+    <ImageButton
+        android:id="@+id/btnreturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#402275"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F64545"
+        android:text="@string/highscore"
+        android:textAlignment="center"
+        android:textColor="#FAE851"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

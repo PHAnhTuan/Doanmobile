@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "201966735006",
+    "project_id": "learningenglish-8baeb",
+    "storage_bucket": "learningenglish-8baeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201966735006:android:ef80a61bdfb02ea567358f",
+        "android_client_info": {
+          "package_name": "com.example.doanmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpPBgvNNl_ytWZF7YZJCJUVs0LD60we60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

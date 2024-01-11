@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">LEARNING ENGLISH FOR FUN</string>
+    <string name="theory_name">ENGLISH THEORY</string>
+    <string name="minigame_name">ENGLISH MINIGAME</string>
+    <string name="correct_name">MINIGAME CORRECT</string>
+    <string name="vocabulary_name">ENGLISH VOCABULARY</string>
+    <string name="grammar_name">ENGLISH GRAMMAR</string>
+    <string name="quiz_name">MINIGAME QUIZ</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="madeby">Made by Team 13</string>
+    <string name="name">Full name</string>
+    <string name="birthday">Birthday</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="numphone">Phone Number</string>
+    <string name="level">Level</string>
+    <string name="nation">Nation</string>
+    <string name="quit">Quit</string>
+    <string name="theory">Theory</string>
+    <string name="minigame">Mini Game</string>
+    <string name="grammar">Grammar</string>
+    <string name="vocabulary">Vocabulary</string>
+    <string name="highscore">Highscore</string>
+    <string name="result">Result</string>
+    <string name="again">Play Again</string>
+    <string name="answer">Answer</string>
+    <string name="correct">Correct</string>
+    <string name="quiz">Quiz</string>
+    <string name="start">Start</string>
+    <string name="question">Can you guess what is\nin the picture?</string>
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="username">Username</string>
+    <string name="playername">Enter player name</string>
+    <string name="choose">Choose the number of questions</string>
+    
+    <string name="tenses">Verb Tenses</string>
+    <string name="sentence">Basic Sentence Parts</string>
+    <string name="sentence_parts">Basic Sentence Parts</string>
+    <string name="articles">Articles</string>
+    <string name="pronouns">Pronouns</string>
+    <string name="indirect_speech">Indirect Speech</string>
+    <string name="passive_voice">Passive Voice</string>
+    <string name="relatives_clause">Relatives Clause</string>
+    <string name="conditional_sentences">Conditional Sentences</string>
+    <string name="tag_question">Tag question</string>
+    <string name="subject_verb">Subject-Verb Agreement</string>
+    <string name="gerund">Gerund</string>
+    <string name="clause">Clause</string>
+
+</resources>
