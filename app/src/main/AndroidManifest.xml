@@ -34,6 +34,9 @@
         <activity android:name=".activity.quiz_highscore"/>
         <activity android:name=".activity.quiz_result"/>
         <activity android:name=".activity.quiz_test"/>
+        <activity android:name=".activity.theorypage"/>
+        <activity android:name=".activity.theory_grammar"/>
+        <activity android:name=".activity.theory_vocabulary"/>
     </application>
 
 </manifest>

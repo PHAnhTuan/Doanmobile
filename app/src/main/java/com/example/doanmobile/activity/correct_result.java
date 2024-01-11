@@ -149,7 +149,7 @@ public class correct_result extends Activity {
         PieChart.setUsePercentValues(true);
         PieChart.setEntryLabelTextSize(12);
         PieChart.setEntryLabelColor(Color.BLACK);
-        PieChart.setCenterText("Total number of sentences");
+        PieChart.setCenterText("Total");
         PieChart.setCenterTextSize(24);
         PieChart.getDescription().setEnabled(false);
 
@@ -165,8 +165,8 @@ public class correct_result extends Activity {
         ArrayList<PieEntry> entries = new ArrayList<>();
 
         float temp = (float) Score/Sentence;
-        entries.add(new PieEntry(temp,"Number of correct sentences"));
-        entries.add(new PieEntry(1.0f-temp,"Number of incorrect sentences"));
+        entries.add(new PieEntry(temp,"Correct"));
+        entries.add(new PieEntry(1.0f-temp,"Incorrect"));
 
         ArrayList<Integer> colors = new ArrayList<>();
         for (int color: ColorTemplate.MATERIAL_COLORS) {

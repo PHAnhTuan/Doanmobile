@@ -64,7 +64,7 @@ public class quiz_highscore extends Activity {
     public void readFromFile() {
         try {
             String splitBy = ",";
-            FileInputStream in = this.openFileInput("nguoichoi.csv");
+            FileInputStream in = this.openFileInput("player1.csv");
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             while (br != null) {
                 String line = br.readLine();

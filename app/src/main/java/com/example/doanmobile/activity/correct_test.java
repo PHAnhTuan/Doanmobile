@@ -1096,7 +1096,7 @@ public class correct_test extends Activity {
         pos = integers[qc1];
         countdown();
         CauHoi.setText(L1.get(pos).Q);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
     }
 
@@ -1105,7 +1105,7 @@ public class correct_test extends Activity {
         pos = integers[qc2];
         countdown();
         CauHoi.setText(L2.get(pos).Q);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
     }
 
@@ -1123,7 +1123,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
     }
 
@@ -1142,7 +1142,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1162,7 +1162,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1182,7 +1182,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1202,7 +1202,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1222,7 +1222,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1241,7 +1241,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
     }
 
@@ -1259,7 +1259,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1278,7 +1278,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1297,7 +1297,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1316,7 +1316,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1335,7 +1335,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1354,7 +1354,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1373,7 +1373,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1392,7 +1392,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1411,7 +1411,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1430,7 +1430,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }
@@ -1449,7 +1449,7 @@ public class correct_test extends Activity {
         }
 
         CauHoi.setText(chuoi);
-        Diem.setText("Câu đúng: " + kq);
+        Diem.setText("Right sentence: " + kq);
         TraLoi.getText().clear();
 
     }

@@ -55,7 +55,7 @@ public class quiz_result extends Activity {
         socau = packageFromCaller.getInt("num");
         readFromFile();
 
-        Result.setText("Số câu trả lời: " + sodiem + "/" + socau);
+        Result.setText("Number of answers: " + sodiem + "/" + socau);
         PieChart = findViewById(R.id.PieChart);
         setupPieChart();
         loadPieChartData();
@@ -86,7 +86,7 @@ public class quiz_result extends Activity {
     {
         try
         {
-            FileOutputStream outputStream = this.openFileOutput("nguoichoi.csv", Context.MODE_PRIVATE);
+            FileOutputStream outputStream = this.openFileOutput("player1.csv", Context.MODE_PRIVATE);
             PrintWriter pw = new PrintWriter(outputStream);
             for (player1 in:list)
                 pw.println(in);
@@ -102,7 +102,7 @@ public class quiz_result extends Activity {
     public void readFromFile() {
         try{
             String splitBy = ",";
-            FileInputStream in = this.openFileInput("nguoichoi.csv");
+            FileInputStream in = this.openFileInput("player1.csv");
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             while (br != null) {
                 String line = br.readLine();
@@ -148,7 +148,7 @@ public class quiz_result extends Activity {
         PieChart.setUsePercentValues(true);
         PieChart.setEntryLabelTextSize(12);
         PieChart.setEntryLabelColor(Color.BLACK);
-        PieChart.setCenterText("Tổng số câu");
+        PieChart.setCenterText("Total");
         PieChart.setCenterTextSize(24);
         PieChart.getDescription().setEnabled(false);
 
@@ -164,8 +164,8 @@ public class quiz_result extends Activity {
         ArrayList<PieEntry> entries = new ArrayList<>();
 
         float temp = (float) sodiem/socau;
-        entries.add(new PieEntry(temp,"Số câu đúng"));
-        entries.add(new PieEntry(1.0f-temp,"Số câu sai"));
+        entries.add(new PieEntry(temp,"Correct"));
+        entries.add(new PieEntry(1.0f-temp,"Incorrect"));
 
         ArrayList<Integer> colors = new ArrayList<>();
         for (int color: ColorTemplate.MATERIAL_COLORS) {
@@ -176,7 +176,7 @@ public class quiz_result extends Activity {
             colors.add(color);
         }
 
-        PieDataSet dataSet = new PieDataSet(entries, "Chú thích");
+        PieDataSet dataSet = new PieDataSet(entries, "Note");
         dataSet.setColors(colors);
 
         PieData data = new PieData(dataSet);

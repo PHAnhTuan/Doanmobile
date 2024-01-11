@@ -10,40 +10,40 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.doanmobile.R;
 
-public class homepage extends AppCompatActivity {
-    Button btntheory, btnminigame, btnquit;
+public class theorypage extends AppCompatActivity {
+    Button Grammar, Vocabulary, Quit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homepage);
-        btntheory = findViewById(R.id.btnTheory);
-        btnminigame = findViewById(R.id.btnGame);
-        btnquit = findViewById(R.id.btnQuit);
+        setContentView(R.layout.theory);
+        Grammar = findViewById(R.id.btngrammar);
+        Vocabulary = findViewById(R.id.btnvocabulary);
+        Quit = findViewById(R.id.btnQuit);
         final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.buttonclick);
 
-        btntheory.setOnClickListener(new View.OnClickListener() {
+        Grammar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-                Intent intent = new Intent(homepage.this, theorypage.class);
+                Intent intent = new Intent(theorypage.this, theory_grammar.class);
                 startActivity(intent);
             }
         });
 
-        btnminigame.setOnClickListener(new View.OnClickListener() {
+        Vocabulary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-                Intent intent1 = new Intent(homepage.this, minigamepage.class);
+                Intent intent1 = new Intent(theorypage.this, theory_vocabulary.class);
                 startActivity(intent1);
             }
         });
 
-        btnquit.setOnClickListener(new View.OnClickListener() {
+        Quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-                Intent intent2 = new Intent(homepage.this, MainActivity.class);
+                Intent intent2 = new Intent(theorypage.this, MainActivity.class);
                 startActivity(intent2);
                 finish();
             }
